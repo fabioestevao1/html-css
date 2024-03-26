@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10 -Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em diversos dispositivos</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="M.png" type="image/png">
+        <img src="G.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio src="Speak The Truth - Go By Ocean _ Ryan McCaffrey.mp3" controls autoplay></audio>
+    <p>Outra forma de fazer </p>
+    <audio>
+        <source src="Speak The Truth - Go By Ocean _ Ryan McCaffrey.mp3" type="audio/mpeg">
+        <!-- carregar os tipos de arquivo que quer carregar de cima pra baixo. Primeiro mp3, depois wav,ogg por exemplo-->
+    </audio>
+    
+    <h1>Inserindo Video</h1>
+    <p>Hospedagem local</p>
+    <video src="meu-video.mp4" width="500" controls></video>
+
+    <p>Melhor Maneira</p>
+    <video width="500" controls >
+        <source src="meu-video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
